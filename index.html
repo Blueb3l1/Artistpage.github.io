@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>BlueBell's Webpage | Home Page</title>
+    <link rel="icon" href="images/favicon.png" type="image/png"> <!-- tab icon -->
+    <meta name="description" content="This is the starting webpage to my portfolio, consiting of two categories. iluustrations and Fundamentals of web development.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- always above the style sheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Stylesheet always above style sheet-->
+    <link rel="stylesheet" href="style.css">	
+</head>
+
+	<body>
+
+		<header>
+			<div class="header-top">
+				<a href="index.html" class="icon">
+				<img src="images/blob-icon.png" width="500" height="150" alt="My blue blob, with an orange." class="blob">
+				</a>
+			<nav>
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="game.html">Mini-Game</a>
+                <a href="protfolio.html">Protfolio</a>
+			</nav>
+			</div>
+		</header>
+
+			<div class="home-hero">
+				<h1>Hello there!</h1>
+			</div>
+
+		<main>
+				<h2>About me!</h2>
+					<p>Hello! My name is Mai, like the English word "My", rather than "May". I'm currently enrolled as a student at Saint Paul College, in St. Paul, Minnesota, and pursuing Computer Graphics and Visualization for an associates degree.</p>
+
+				<h3>Following classes I've taken</h3>
+					<ul>
+						<li>Web Fundamentals, where I learned the basics of HTML and CSS</li>
+						<li>Composition 1, a writing requirement.</li>
+						<li>Interpersonal Communications, a class about personal connections with others</li>				
+					</ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+				<h3>My hobbies and enjoyments in life</h3>
+                    <p>I have three hobbies that I enjoy doing my spare time, digitally drawing, playing accessible moblie games, and crocheting. Crocheting ususally takes time for me to start and finish, but the end results are worth the time. Moblie games, I don't play as often, but I mostly play sandbox games. Digitally drawing was the longest hobby I've done since I was young, so it holds a place in my heart. Although I usually struggle with art block as well.</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="images/index-image.png" width="555" height="600" alt="Index image of my online persona with my hobbies hovering about. In relation to my hobbies." class="hobby-image">
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container fluid -->
+
+                <br>
+
+            <h2>Samples of the digital art/illustrations I've made</h2>
+                <h5>Throughout 2023-25, with my style of drawing</h5>
+                <div class="gallery-index">
+
+                    <div class="preview-index">
+                        <img id="preview" src="images/petting-blob.png" style="display:block;margin:0 auto;" alt="Variations of digital arts/illustrations the creator has made over the years."  height="640" width="640"/>
+                    </div>
+
+                    <div class="index-thumbnails" style="margin-left:0 auto;text-align:center">
+                        <img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/petting-blob.png" alt="A cropped illustration with a blue haired girl petting the head of a blue blob from the icon on top." height="640"  width="640"/>
+
+                        <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/sitting-mug.png" alt="Same blue haired girl with a mug in hand, sitting on a bean bag." height="600"  width="700"/>
+
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/smiling-girl.png" alt="An illustration of a girl with brown hair, posing with a finger pointing up." height="600"  width="800" />
+
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/rolling-pin.png" alt="The blue blob smiling with a rolling pin squished between it's middle." height="560"  width="800" />
+                    </div>
+                </div>
+
+		</main>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-sm-6">
+                        <div class="web-text">
+                            <h4>Read here</h4>
+                            <p>This website is intendided as a portfoilo. Everything here is shown for the purpose of the understandment of what the student has learnt over the semester. While also a showcase of the creators artistic illustrations.</p>
+                            <p>Do not steal, nor trace the images shown. Images shown thoughout these web pages were made by the creator, <b>Mai S. Khang.</b></p>
+                        </div> <!-- first web text -->
+                    </div>
+
+                    <!-- right column -->
+                        <div class="col-sm-6">
+                            <div class="web-text">
+                            <h4>Connect with Me here!</h4>
+                                <div class="row">
+                                    <div class="stack"> <!-- purpose of stacking the icons, vertical then horizontal -->
+                                        <div class="col-sm-4">
+                                            <a href="https://github.com/Blueb3l1?tab=repositories" class="footer-a">
+                                                <i class="fa fa-github-square" aria-hidden="true"></i>
+                                                <h5 class="i-text">GitHub</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <a href="https://www.instagram.com/0hmy_sadness/" class="footer-a">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                <h5 class="i-text">Instgram</h5>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <a href="mailto:mskhang06@gmail.com" class="footer-a">
+                                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                <h5 class="i-text">Email</h5>
+                                            </a>
+                                        </div>
+                                    </div> <!-- second web text -->
+                                </div> <!-- stack class -->
+
+                            </div> <!-- second row end -->
+                        </div> <!-- closes main row --> 
+
+                    <small>&copy; 2025 Mai Khang. All Rights reserved.</small>
+                </div> <!-- container-fluid end -->
+      </footer>
+
+    </body>
+</html> 	
+

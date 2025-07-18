@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cagliostro&family=Chewy&family=Gorditas:wght@400;700&family=Hepta+Slab:wght@1..900&family=Patrick+Hand&display=swap');
+/* text custom */
+.home-hero h1{
+	color: white;
+	text-align: center;
+	padding-top: 159px;
+	margin: 0;
+		/* size */
+	font-size: 3em;	
+	font-weight: normal;
+	text-shadow: 7px 2px 5px black;
+}
+h1, h2, h3, h4, h5{
+	font-family: "Hepta Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+p, li{
+	font-family: "Cagliostro", sans-serif;
+	font-weight: 400;
+  	font-style: normal;
+
+  	font-size: 18px;
+}
+
+/* body and main */
+body{
+	margin: 0;
+}
+main{
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+}
+
+/* header */
+header{
+	background-color: #0099cc;
+	padding: 5px;
+
+	border-bottom: 3px solid #0082ad;
+}
+.header-top{
+	display: flex;
+}
+.blob{
+	width: 250px;
+	height: auto;
+}
+
+/* images */
+.home-hero{
+	background-image: url(images/home-hero2.png);
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.hobby-image{
+	max-width: 350px;
+	height: auto;
+
+	padding: 10px;
+
+	border: 3px solid lightgrey;
+	box-shadow: 3px 5px 10px black;
+}
+
+
+/* navigation customization */
+nav{
+	text-align: center;
+	padding: 5px;
+	margin: 15px; 
+	font-size: 20px;
+}
+nav a{
+	text-decoration: none;
+	padding: 5px;
+	font-weight: bold;
+}
+nav a:link{
+	color: white;
+}
+nav a:visited{
+	color: white;
+}
+nav a:hover{
+	color: #ff9933;
+	text-decoration: none;
+}
+nav a:active{
+	color: #ff9933;
+}
+
+.icon:hover{
+	opacity: 75%;
+}
+
+/* sub-links */
+.footer-a:hover{
+	background-color: #ff9933;
+	text-decoration: none;
+}
+/* home page and index */
+.gallery-index{
+	display: flex;
+
+	margin: 0 auto;
+}
+#preview{
+	border: white solid 5px;
+	box-shadow: 3px 2px 6px black;
+
+	height: auto;
+}
+.preview-index{
+	margin: auto;
+}
+
+.index-thumbnails{
+	display: flex;
+	flex-direction: column;
+	justify-items: column;
+
+	margin: 10px;
+}
+#img1, #img2, #img3, #img4{
+	max-width: 250px;
+	height: auto;
+
+	border: 5px solid white;
+	box-shadow: 3px 2px 6px black;
+}
+
+/* resume page */
+
+/* game page */
+.game-controls{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.mobile, .desktop, .tablets{
+	display: none;
+}
+.myButton{
+	background-color: #418675;
+	color: white;
+	border: solid 2px #234f52;
+	border-radius: 10px;
+	padding: 6px;
+	margin: 10px;
+}
+#game canvas{
+	margin: 0 auto;
+	display: block;
+
+	border:  3px #9effe2;
+	border-radius: 2px;
+	background-size: cover;
+	background-position: top;
+}
+
+.game-quote{
+	background-color: rgb(255, 153, 51, 50%);
+	border-left: 9px solid #f08f2d;
+	padding: 15px;
+}
+
+/* portfolio page */
+.portfolio-img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+
+	border: 5px solid white;
+	box-shadow: 3px 2px 5px black;
+
+	display: block;
+}
+
+/* text */
+h2{
+	border-bottom: 2px dashed #dbdbdb;
+	display: inline;
+	margin-bottom: 5px;
+}
+h3{
+	font-size: 1.5em;
+}
+
+.resume-web{
+	border-bottom: 2px solid #c2c2c2;
+	padding-bottom: 5px;
+}
+
+.portfolio-h5{
+	margin: 0.9em;
+}
+
+/* footer */
+footer{
+	background-color: #0099cc;
+	padding-top: 15px;
+}
+footer small{
+	background-color: #0a4780;
+	color: white;
+
+	text-align: center;
+	width: 100%;
+	padding: 9px;
+
+}
+.footer-a{
+	display: flex;
+	flex-direction: row;
+}
+
+.web-text{
+	margin-left: 120px;
+	margin-right: 150px;
+
+	color: white;
+}
+/* footer awesome icons */
+.fa{
+	font-size: 2em;
+	color: white;
+	padding-left: 15px;
+	margin: 8px;
+
+	display: flex;
+}
+.i-text{
+	color: white;
+	padding-top: 10px;
+	padding-right: 20px;
+}
+
+/* footer col-sm-# */
+.col-sm-4{
+	display: flex;
+	/* flex-direction: column;  without this, it causes the text to be underneath the images */
+	gap: 15px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+	h1{
+    	font-size: 4em;
+ 	}
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	/* text */
+	p, li{
+		font-size: 19px;
+	}
+
+ 	h1{
+    	font-size: 1.2em;
+	}
+	h2{
+		font-size: 23px;
+	}
+
+	/* index section */
+	.hobby-image{
+		margin-left: 20px;
+	}
+
+	#preview{
+		max-width: 700px;
+	}
+	#img1, #img2, #img3, #img4{
+		max-width: 200px;
+	}
+
+	/* footer section */
+	.web-text{
+		margin: 0;
+	}
+
+	/* game section */
+	.game-controls{
+		display: none;
+	}
+		/* JavaScript Game changes for mobile */
+		.tablets{
+			display: none;
+		}
+		@media only screen and (max-width: 1024px){
+		.desktop, .moblie{
+			display: none;
+		}
+		.tablets{
+			display: block;
+			touch-action: manipulation;
+
+			margin-left: 2em;
+		}
+
+
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	/* text */
+	p, li{
+		font-size: 17px;
+	}
+  	h1{
+  		font-size: 2em;
+  	}
+  	h2{
+  		font-size: 23px;
+  	}
+  	h3{
+  		font-size: 19px;
+  	}
+  	h4{
+  		font-size: 17px;
+  		font-weight: bold;
+  	}
+
+  /* navigation */
+  header{
+
+  }
+  /* index */
+  	.hobby-image{
+  		display: none;
+  	}
+  /* preview index */
+	#preview{
+		max-width: 500px;
+	}
+	#img1, #img2, #img3, #img4{
+		max-width: 150px;
+	}
+
+	/* footer section */
+	.web-text{
+		margin: 0;
+	}
+	/* game section */
+	.game-controls{
+			display: none;
+		}
+		/* JavaScript Game changes for mobile */
+		.mobile{
+			display: none;
+		}
+		@media only screen and (max-width: 768px){
+		.desktop{
+			display: none;
+		}
+		.mobile{
+			display: block;
+			touch-action: manipulation;
+
+			margin-left: 2em;
+		}
+}
+
+}

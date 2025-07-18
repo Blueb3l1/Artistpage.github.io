@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cagliostro&family=Chewy&family=Gorditas:wght@400;700&family=Hepta+Slab:wght@1..900&family=Patrick+Hand&display=swap');
+/* fonts */
+h1, h4, nav a{
+  	font-family: "Hepta Slab", serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+
+  	color: white;
+}
+p{
+  	font-family: "Cagliostro", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+
+  	font-size: 17px;
+  	color: white;
+}
+
+/* body and main */
+body{
+	margin: 0;
+	background-color: floralwhite;
+}
+main{
+	max-width: 1200px;
+	margin: 15px auto;
+	padding: 20px;
+
+	border-left: 2px solid #f0e7d6;
+	border-right: 2px solid #f0e7d6;
+}
+
+/* home-hero and header */
+.home-hero{
+	border: solid white 7px;
+	box-shadow: 3px 2px 6px black;
+	margin: auto;
+
+	height: auto;
+	width: 900px;
+	display: flex;
+	justify-items: center;
+
+}
+header{
+	display: flex; /* ensures the nagivation wraps besides the header */
+	background-color: #339966;
+	border-bottom: 10px solid #fbd23c;
+}
+header h1{
+	margin: 5px;
+	padding-top: 9px;
+
+	font-size: 1.9em;
+}
+
+/* navigation */
+nav {
+	padding-top: 20px;
+	padding-left: 15px;
+}
+nav a{
+	padding-right: 7px;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+nav a:link{
+	color: white;
+}
+nav a:visited{
+	color: white;
+}
+nav a:hover{
+	color: red;
+	text-decoration: none;
+}
+nav a:active{
+	color: red;
+}
+
+/* gallery and images */
+.gallery-thumbnails{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-items: center;
+
+	gap: 9px;
+	padding: 15px;
+}
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10{
+	max-width: 115px;
+	height: 80px;
+	margin: 5px auto;
+
+	border: white solid 2px;
+	box-shadow: 3px 2px 6px black;
+}
+
+#preview{
+	border: white solid 5px;
+	box-shadow: 3px 2px 6px black;
+
+	height: auto;
+}
+
+/* container fluid */
+/* row */
+/* col-sm-# */
+.col-sm-4{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+}
+
+
+/* icons */
+.fa{
+	font-size: 2em;
+	color: white;
+}
+.header-paw{
+	font-size: 1.6em;
+	padding: 9px;
+}
+
+/* text customs */
+.i-text{
+	margin: 5px 0;
+	padding-bottom: 5px;
+}
+.above-text{
+	text-align: center;
+	padding: 20px;
+	background-color: #339966;
+	margin: 20px;
+}
+ h4{
+ 	border-bottom: 2px solid #7ad19c;
+ 	display: inline;
+ }
+
+/* footer */
+footer{
+	background-color: #339966;
+}
+small{
+	background-color: #fbd23c;
+
+	text-align: center;
+	width: 100%;
+	padding: 9px;
+	display: block;
+}
+.web-text{
+	margin-left: 100px;
+	margin-right: 100px;
+}	
+
+/* media */
+@media only screen and (max-width: 768px){
+/*The CSS will work ONLY IF the screen size is less than 768px (smartphones only) */
+
+	.col-sm-4{
+		max-width: 60%;
+	}
+
+	.fa{
+		font-size: 45px;
+	}
+	.col-sm-4 p{
+		font-size: 20px;
+	}
+	.home-hero{
+		width: 90%;
+		height: auto;
+	}
+}
